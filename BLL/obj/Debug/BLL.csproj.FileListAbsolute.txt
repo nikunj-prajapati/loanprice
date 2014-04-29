@@ -1,0 +1,80 @@
+C:\Users\Red\Documents\Visual Studio 2010\Projects\DateCalculator\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Red\Documents\Visual Studio 2010\Projects\DateCalculator\BLL\bin\Debug\BLL.dll
+C:\Users\Red\Documents\Visual Studio 2010\Projects\DateCalculator\BLL\bin\Debug\BLL.pdb
+C:\Users\Red\Documents\Visual Studio 2010\Projects\DateCalculator\BLL\bin\Debug\DAL.dll
+C:\Users\Red\Documents\Visual Studio 2010\Projects\DateCalculator\BLL\bin\Debug\DAL.pdb
+C:\Users\Red\Documents\Visual Studio 2010\Projects\DateCalculator\BLL\obj\Debug\BLL.dll
+C:\Users\Red\Documents\Visual Studio 2010\Projects\DateCalculator\BLL\obj\Debug\BLL.pdb
+C:\Users\ANCp2\Desktop\sajid\DateCalculator\BLL\bin\Debug\BLL.dll
+C:\Users\ANCp2\Desktop\sajid\DateCalculator\BLL\bin\Debug\BLL.pdb
+C:\Users\ANCp2\Desktop\sajid\DateCalculator\BLL\bin\Debug\DAL.dll
+C:\Users\ANCp2\Desktop\sajid\DateCalculator\BLL\bin\Debug\DAL.pdb
+C:\Users\ANCp2\Desktop\sajid\DateCalculator\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\ANCp2\Desktop\sajid\DateCalculator\BLL\obj\Debug\BLL.dll
+C:\Users\ANCp2\Desktop\sajid\DateCalculator\BLL\obj\Debug\BLL.pdb
+D:\Projects\DateCalculatorVS2008\DateCalculatorVS2008\DateCalculatorVS2008\BLL\bin\Debug\BLL.dll
+D:\Projects\DateCalculatorVS2008\DateCalculatorVS2008\DateCalculatorVS2008\BLL\bin\Debug\BLL.pdb
+D:\Projects\DateCalculatorVS2008\DateCalculatorVS2008\DateCalculatorVS2008\BLL\bin\Debug\DAL.dll
+D:\Projects\DateCalculatorVS2008\DateCalculatorVS2008\DateCalculatorVS2008\BLL\bin\Debug\DAL.pdb
+D:\Projects\DateCalculatorVS2008\DateCalculatorVS2008\DateCalculatorVS2008\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\DateCalculatorVS2008\DateCalculatorVS2008\DateCalculatorVS2008\BLL\obj\Debug\BLL.dll
+D:\Projects\DateCalculatorVS2008\DateCalculatorVS2008\DateCalculatorVS2008\BLL\obj\Debug\BLL.pdb
+D:\Ajay\LoanPricerWebBased1.1\BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Ajay\LoanPricerWebBased1.1\BLL\bin\Debug\BLL.dll
+D:\Ajay\LoanPricerWebBased1.1\BLL\bin\Debug\BLL.pdb
+D:\Ajay\LoanPricerWebBased1.1\BLL\bin\Debug\DAL.dll
+D:\Ajay\LoanPricerWebBased1.1\BLL\bin\Debug\DAL.pdb
+D:\Ajay\LoanPricerWebBased1.1\BLL\obj\Debug\BLL.dll
+D:\Ajay\LoanPricerWebBased1.1\BLL\obj\Debug\BLL.pdb
+C:\Users\Ajay\Documents\Visual Studio 2008\Projects\LoanPricerWebBased1.1\BLL\bin\Debug\BLL.dll
+C:\Users\Ajay\Documents\Visual Studio 2008\Projects\LoanPricerWebBased1.1\BLL\bin\Debug\BLL.pdb
+C:\Users\Ajay\Documents\Visual Studio 2008\Projects\LoanPricerWebBased1.1\BLL\bin\Debug\DAL.dll
+C:\Users\Ajay\Documents\Visual Studio 2008\Projects\LoanPricerWebBased1.1\BLL\bin\Debug\DAL.pdb
+C:\Users\Ajay\Documents\Visual Studio 2008\Projects\LoanPricerWebBased1.1\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ajay\Documents\Visual Studio 2008\Projects\LoanPricerWebBased1.1\BLL\obj\Debug\BLL.dll
+C:\Users\Ajay\Documents\Visual Studio 2008\Projects\LoanPricerWebBased1.1\BLL\obj\Debug\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased1.1\BLL\bin\Debug\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased1.1\BLL\bin\Debug\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased1.1\BLL\bin\Debug\DAL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased1.1\BLL\bin\Debug\DAL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased1.1\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased1.1\BLL\obj\Debug\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased1.1\BLL\obj\Debug\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\BLL\bin\Debug\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\BLL\bin\Debug\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\BLL\bin\Debug\DAL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\BLL\bin\Debug\DAL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\BLL\obj\Debug\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\BLL\obj\Debug\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\BLL\obj\Debug\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\BLL\bin\Debug\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\BLL\bin\Debug\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\BLL\bin\Debug\DAL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\BLL\bin\Debug\DAL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\BLL\obj\Debug\BLL.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\BLL\bin\Debug\BLL.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\BLL\bin\Debug\BLL.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\BLL\bin\Debug\DAL.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\BLL\bin\Debug\DAL.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\BLL\obj\Debug\BLL.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\BLL\obj\Debug\BLL.pdb
+D:\Aseum Projects\Loan\BLL\bin\Debug\BLL.dll
+D:\Aseum Projects\Loan\BLL\bin\Debug\BLL.pdb
+D:\Aseum Projects\Loan\BLL\bin\Debug\DAL.dll
+D:\Aseum Projects\Loan\BLL\bin\Debug\DAL.pdb
+D:\Aseum Projects\Loan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Aseum Projects\Loan\BLL\obj\Debug\BLL.dll
+D:\Aseum Projects\Loan\BLL\obj\Debug\BLL.pdb
+E:\Aseum\Aseum Projects\Loan\BLL\bin\Debug\BLL.dll
+E:\Aseum\Aseum Projects\Loan\BLL\bin\Debug\BLL.pdb
+E:\Aseum\Aseum Projects\Loan\BLL\bin\Debug\DAL.dll
+E:\Aseum\Aseum Projects\Loan\BLL\bin\Debug\Financial.dll
+E:\Aseum\Aseum Projects\Loan\BLL\bin\Debug\SqlHelper.dll
+E:\Aseum\Aseum Projects\Loan\BLL\bin\Debug\DAL.pdb
+E:\Aseum\Aseum Projects\Loan\BLL\bin\Debug\SqlHelper.pdb
+E:\Aseum\Aseum Projects\Loan\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Aseum\Aseum Projects\Loan\BLL\obj\Debug\BLL.dll
+E:\Aseum\Aseum Projects\Loan\BLL\obj\Debug\BLL.pdb

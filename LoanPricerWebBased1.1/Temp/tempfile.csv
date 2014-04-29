@@ -1,0 +1,5 @@
+CodeName,Borrower,Gurantor,Country,Grid,SummitCreditEntity,CreditRatingModys,CreditRatingSPs,CreditRatingFitch,CreditRatingING,StructureID,PP,Sector,FacilitySize,Signing_Date,Maturity_Date,CouponDate,FixedOrFloating,Margin,Notional,Currency,CouponFrequency,Bilateral,Amortizing,AmortisationsStartPoint,NoOfAmortisationPoint
+VEBMay18_eur_bilat,VEB,1,Russia,36000872,VNESHECONOMBANK,AAB,AAA,ABB,BBB,AM0138,PP5O0J042,Financial Services,70000000,17/05/2013,17/05/2018,31/03/2014,Floating,315,70000000,EUR,Semi-Annual,Yes,Yes,17/11/2015,6
+TestA,ABC,2,Russia,36000873,VNESHECONOMBANK,BBB,BBC,AAB,ACB,AM0139,PP5O0J043,Financial Services,70000001,17/05/2013,17/05/2018,31/03/2014,Floating,200,1000000000,EUR,Annual,Yes,Yes,18/11/2015,7
+TestB,BCD,3,Russia,36000874,VNESHECONOMBANK,CCC,BBB,CCF,NMJ,AM0140,PP5O0J044,Financial Services,70000002,17/05/2013,17/05/2018,31/03/2014,Floating,400,5000,EUR,Quarterly,Yes,No,,
+TestC,EDF,4,Russia,36000875,VNESHECONOMBANK,AAB,CBA,ABC,ccc,AM0141,PP5O0J045,Financial Services,70000003,17/05/2013,17/05/2018,31/03/2014,Floating,700,78900,EUR,Monthly,Yes,Yes,20/11/2015,9

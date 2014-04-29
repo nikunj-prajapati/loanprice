@@ -1,0 +1,1133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LoanPriceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="LoanPriceModelStoreContainer">
+          <EntitySet Name="Borrowers" EntityType="LoanPriceModel.Store.Borrowers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CounterParty" EntityType="LoanPriceModel.Store.CounterParty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CreditAgencies" EntityType="LoanPriceModel.Store.CreditAgencies" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CreditRatings" EntityType="LoanPriceModel.Store.CreditRatings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Currencies" EntityType="LoanPriceModel.Store.Currencies" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DuplicateLoans" EntityType="LoanPriceModel.Store.DuplicateLoans" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DuplicateRecords" EntityType="LoanPriceModel.Store.DuplicateRecords" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EmailGroups" EntityType="LoanPriceModel.Store.EmailGroups" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EURCurves" EntityType="LoanPriceModel.Store.EURCurves" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Groups" EntityType="LoanPriceModel.Store.Groups" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LoanHistory" EntityType="LoanPriceModel.Store.LoanHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Loans" EntityType="LoanPriceModel.Store.Loans" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LoanSchedule" EntityType="LoanPriceModel.Store.LoanSchedule" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Login" EntityType="LoanPriceModel.Store.Login" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PasswordHistory" EntityType="LoanPriceModel.Store.PasswordHistory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="QuotesAndTrades" EntityType="LoanPriceModel.Store.QuotesAndTrades" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Settings" EntityType="LoanPriceModel.Store.Settings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblActivityLog" EntityType="LoanPriceModel.Store.tblActivityLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCountry" EntityType="LoanPriceModel.Store.tblCountry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblEmailQue" EntityType="LoanPriceModel.Store.tblEmailQue" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblHoliday" EntityType="LoanPriceModel.Store.tblHoliday" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="USDCurves" EntityType="LoanPriceModel.Store.USDCurves" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_PasswordHistory_Login" Association="LoanPriceModel.Store.FK_PasswordHistory_Login">
+            <End Role="Login" EntitySet="Login" />
+            <End Role="PasswordHistory" EntitySet="PasswordHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblActivityLog_Login" Association="LoanPriceModel.Store.FK_tblActivityLog_Login">
+            <End Role="Login" EntitySet="Login" />
+            <End Role="tblActivityLog" EntitySet="tblActivityLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblHoliday_tblCountry" Association="LoanPriceModel.Store.FK_tblHoliday_tblCountry">
+            <End Role="tblCountry" EntitySet="tblCountry" />
+            <End Role="tblHoliday" EntitySet="tblHoliday" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Borrowers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Region" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="Grid" Type="varchar" MaxLength="100" />
+          <Property Name="SummitCreditEntity" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="CounterParty">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Region" Type="nvarchar" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CreditAgencies">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CreditAgency" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="CreditRatings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CreditAgencyID" Type="int" />
+          <Property Name="Rating" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Currencies">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Currancy" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DuplicateLoans">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CodeName" Type="varchar" MaxLength="100" />
+          <Property Name="Borrower" Type="varchar" MaxLength="100" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="Sector" Type="varchar" MaxLength="50" />
+          <Property Name="Signing Date" Type="varchar" MaxLength="50" />
+          <Property Name="Maturity Date" Type="varchar" MaxLength="50" />
+          <Property Name="FixedOrFloating" Type="varchar" MaxLength="50" />
+          <Property Name="Margin" Type="varchar" MaxLength="50" />
+          <Property Name="Currency" Type="varchar" MaxLength="50" />
+          <Property Name="CouponFrequency" Type="varchar" MaxLength="50" />
+          <Property Name="FacilitySize" Type="varchar" MaxLength="50" />
+          <Property Name="Bilateral" Type="bit" />
+          <Property Name="Amortizing" Type="varchar" MaxLength="50" />
+          <Property Name="CouponDate" Type="varchar" MaxLength="50" />
+          <Property Name="Notional" Type="varchar" MaxLength="50" />
+          <Property Name="AmortisationsStartPoint" Type="varchar" MaxLength="50" />
+          <Property Name="NoOfAmortisationPoint" Type="int" />
+        </EntityType>
+        <EntityType Name="DuplicateRecords">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LoanName" Type="nvarchar" MaxLength="50" />
+          <Property Name="TimeStamp" Type="datetime" />
+          <Property Name="CounterParty" Type="nvarchar" MaxLength="50" />
+          <Property Name="BidPrice" Type="numeric" />
+          <Property Name="OfferPrice" Type="numeric" />
+          <Property Name="BidSpread" Type="numeric" />
+          <Property Name="OfferSpread" Type="numeric" />
+          <Property Name="Traded" Type="bit" />
+          <Property Name="MarketValue" Type="numeric" />
+          <Property Name="CountryID" Type="int" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmailGroups">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="GroupName" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EURCurves">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UploadDate" Type="datetime" />
+          <Property Name="SummitGenDate" Type="datetime" />
+          <Property Name="RateDate" Type="datetime" />
+          <Property Name="Rate" Type="numeric" Scale="5" />
+          <Property Name="DiscFreq" Type="decimal" Scale="5" />
+          <Property Name="CCY" Type="varchar" MaxLength="50" />
+          <Property Name="CurveIndex" Type="varchar" MaxLength="50" />
+          <Property Name="Days" Type="int" />
+          <Property Name="IsNew" Type="bit" />
+        </EntityType>
+        <EntityType Name="Groups">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsEmailReceiver" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LoanHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LoanName" Type="varchar" MaxLength="100" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="LastModified" Type="datetime" />
+          <Property Name="Action" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Loans">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CodeName" Type="varchar" MaxLength="100" />
+          <Property Name="Borrower" Type="varchar" MaxLength="100" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="Sector" Type="varchar" MaxLength="50" />
+          <Property Name="Signing Date" Type="varchar" MaxLength="50" />
+          <Property Name="Maturity Date" Type="varchar" MaxLength="50" />
+          <Property Name="FixedOrFloating" Type="varchar" MaxLength="50" />
+          <Property Name="Margin" Type="varchar" MaxLength="50" />
+          <Property Name="Currency" Type="varchar" MaxLength="50" />
+          <Property Name="CouponFrequency" Type="varchar" MaxLength="50" />
+          <Property Name="FacilitySize" Type="varchar" MaxLength="50" />
+          <Property Name="Bilateral" Type="bit" />
+          <Property Name="Amortizing" Type="varchar" MaxLength="50" />
+          <Property Name="CouponDate" Type="varchar" MaxLength="50" />
+          <Property Name="Notional" Type="varchar" MaxLength="50" />
+          <Property Name="AmortisationsStartPoint" Type="varchar" MaxLength="50" />
+          <Property Name="NoOfAmortisationPoint" Type="int" />
+          <Property Name="CreditRating" Type="varchar" MaxLength="50" />
+          <Property Name="StructureID" Type="varchar" MaxLength="50" />
+          <Property Name="PP" Type="varchar" MaxLength="50" />
+          <Property Name="Fixed/Floating" Type="varchar" MaxLength="50" />
+          <Property Name="CreditRatingModys" Type="varchar" MaxLength="50" />
+          <Property Name="CreditRatingSPs" Type="varchar" MaxLength="50" />
+          <Property Name="CreditRatingFitch" Type="varchar" MaxLength="50" />
+          <Property Name="CreditRatingING" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="LastEdited" Type="datetime" />
+          <Property Name="Gurantor" Type="varchar" MaxLength="100" />
+          <Property Name="Grid" Type="varchar" MaxLength="100" />
+          <Property Name="SummitCreditEntity" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="LoanSchedule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LoanID" Type="int" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="EndDate" Type="datetime" />
+          <Property Name="Notation" Type="decimal" />
+          <Property Name="Factor" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CoupFrac" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Amortisation" Type="decimal" Scale="7" />
+          <Property Name="FloatingRate" Type="numeric" Scale="5" />
+          <Property Name="Spread" Type="numeric" Scale="5" />
+          <Property Name="AllInRate" Type="numeric" Scale="5" />
+          <Property Name="Interest" Type="numeric" Scale="2" />
+          <Property Name="AmortisationInt" Type="numeric" Scale="2" />
+          <Property Name="CouponPaymentDate" Type="datetime" />
+          <Property Name="RiskFreeDP1" Type="numeric" Scale="7" />
+          <Property Name="RiskFreeDP2" Type="numeric" Scale="7" />
+          <Property Name="Days" Type="int" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="Role" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="IsLocked" Type="bit" Nullable="false" />
+          <Property Name="FailedAttempts" Type="int" Nullable="false" />
+          <Property Name="LastPasswordReset" Type="datetime" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="IsLogin" Type="bit" />
+        </EntityType>
+        <EntityType Name="PasswordHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ChangedPassword" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="ChangedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="QuotesAndTrades">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LoanName" Type="nvarchar" MaxLength="50" />
+          <Property Name="TimeStamp" Type="datetime" />
+          <Property Name="CounterParty" Type="nvarchar" MaxLength="50" />
+          <Property Name="BidPrice" Type="numeric" Scale="2" />
+          <Property Name="OfferPrice" Type="numeric" Scale="2" />
+          <Property Name="BidSpread" Type="numeric" Scale="2" />
+          <Property Name="OfferSpread" Type="numeric" Scale="2" />
+          <Property Name="Traded" Type="bit" />
+          <Property Name="MarketValue" Type="numeric" />
+          <Property Name="CountryID" Type="int" />
+          <Property Name="Country" Type="varchar" MaxLength="50" />
+          <Property Name="AvgLifeDisc" Type="numeric" Scale="2" />
+          <Property Name="AvgLifeRiskDisc" Type="numeric" Scale="2" />
+          <Property Name="AvgLifeNonDisc" Type="numeric" Scale="2" />
+          <Property Name="SettlementDate" Type="datetime" />
+          <Property Name="Margin" Type="varchar" MaxLength="50" />
+          <Property Name="AverageLife" Type="numeric" Scale="5" />
+          <Property Name="TradedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Settings">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="Value" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblActivityLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Activity" Type="varchar" Nullable="false" MaxLength="1000" />
+          <Property Name="Message" Type="varchar" MaxLength="5000" />
+          <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+          <Property Name="Exception" Type="varchar(max)" />
+          <Property Name="SessionID" Type="varchar(max)" Nullable="false" />
+          <Property Name="IP" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="URL" Type="varchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="tblCountry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Code" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblEmailQue">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="SendTime" Type="datetime" Nullable="false" />
+          <Property Name="IsSent" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblHoliday">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HolidayName" Type="varchar" MaxLength="50" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="DayObserved" Type="varchar" MaxLength="50" />
+          <Property Name="CountryID" Type="int" />
+        </EntityType>
+        <EntityType Name="USDCurves">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UploadDate" Type="datetime" />
+          <Property Name="SummitGenDate" Type="datetime" />
+          <Property Name="RateDate" Type="datetime" />
+          <Property Name="Rate" Type="numeric" Scale="5" />
+          <Property Name="DiscFreq" Type="decimal" Scale="5" />
+          <Property Name="CCY" Type="varchar" MaxLength="50" />
+          <Property Name="CurveIndex" Type="varchar" MaxLength="50" />
+          <Property Name="Days" Type="int" />
+          <Property Name="IsNew" Type="bit" />
+        </EntityType>
+        <Association Name="FK_PasswordHistory_Login">
+          <End Role="Login" Type="LoanPriceModel.Store.Login" Multiplicity="1" />
+          <End Role="PasswordHistory" Type="LoanPriceModel.Store.PasswordHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Login">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PasswordHistory">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblActivityLog_Login">
+          <End Role="Login" Type="LoanPriceModel.Store.Login" Multiplicity="1" />
+          <End Role="tblActivityLog" Type="LoanPriceModel.Store.tblActivityLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Login">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblActivityLog">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblHoliday_tblCountry">
+          <End Role="tblCountry" Type="LoanPriceModel.Store.tblCountry" Multiplicity="0..1" />
+          <End Role="tblHoliday" Type="LoanPriceModel.Store.tblHoliday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblCountry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblHoliday">
+              <PropertyRef Name="CountryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LoanPriceModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LoanPriceEntities">
+          <EntitySet Name="Loans" EntityType="LoanPriceModel.Loans" />
+          <EntitySet Name="QuotesAndTrades" EntityType="LoanPriceModel.QuotesAndTrades" />
+          <EntitySet Name="tblCountry" EntityType="LoanPriceModel.tblCountry" />
+          <EntitySet Name="tblHoliday" EntityType="LoanPriceModel.tblHoliday" />
+          <AssociationSet Name="FK_tblHoliday_tblCountry" Association="LoanPriceModel.FK_tblHoliday_tblCountry">
+            <End Role="tblCountry" EntitySet="tblCountry" />
+            <End Role="tblHoliday" EntitySet="tblHoliday" />
+          </AssociationSet>
+          <EntitySet Name="tblActivityLogs" EntityType="LoanPriceModel.tblActivityLog" />
+          <EntitySet Name="Logins" EntityType="LoanPriceModel.Login" />
+          <AssociationSet Name="FK_tblActivityLog_Login" Association="LoanPriceModel.FK_tblActivityLog_Login">
+            <End Role="Login" EntitySet="Logins" />
+            <End Role="tblActivityLog" EntitySet="tblActivityLogs" />
+          </AssociationSet>
+          <EntitySet Name="PasswordHistories" EntityType="LoanPriceModel.PasswordHistory" />
+          <AssociationSet Name="FK_PasswordHistory_Login" Association="LoanPriceModel.FK_PasswordHistory_Login">
+            <End Role="Login" EntitySet="Logins" />
+            <End Role="PasswordHistory" EntitySet="PasswordHistories" />
+          </AssociationSet>
+          <EntitySet Name="EmailGroups" EntityType="LoanPriceModel.EmailGroup" />
+          <EntitySet Name="Groups" EntityType="LoanPriceModel.Group" />
+          <EntitySet Name="tblEmailQues" EntityType="LoanPriceModel.tblEmailQue" />
+          <EntitySet Name="Settings" EntityType="LoanPriceModel.Setting" />
+          <EntitySet Name="DuplicateRecords" EntityType="LoanPriceModel.DuplicateRecord" />
+          <EntitySet Name="DuplicateLoans" EntityType="LoanPriceModel.DuplicateLoan" />
+          <EntitySet Name="CounterParties" EntityType="LoanPriceModel.CounterParty" />
+          <EntitySet Name="Borrowers" EntityType="LoanPriceModel.Borrower" />
+          <EntitySet Name="Currencies" EntityType="LoanPriceModel.Currency" />
+          <EntitySet Name="CreditRatings" EntityType="LoanPriceModel.CreditRating" />
+          <EntitySet Name="CreditAgencies" EntityType="LoanPriceModel.CreditAgency" />
+          <EntitySet Name="EURCurves" EntityType="LoanPriceModel.EURCurve" />
+          <EntitySet Name="USDCurves" EntityType="LoanPriceModel.USDCurve" />
+          <EntitySet Name="LoanHistories" EntityType="LoanPriceModel.LoanHistory" />
+          <EntitySet Name="LoanSchedules" EntityType="LoanPriceModel.LoanSchedule" />
+          </EntityContainer>
+        <EntityType Name="Loans">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="CodeName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Borrower" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Country" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Sector" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Signing_Date" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Maturity_Date" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FixedOrFloating" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Margin" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Currency" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CouponFrequency" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FacilitySize" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Bilateral" Type="Boolean" />
+          <Property Name="Amortizing" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Type="String" Name="CouponDate" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Notional" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="AmortisationsStartPoint" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreditRating" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PP" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Fixed_Floating" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NoOfAmortisationPoint" />
+          <Property Type="String" Name="StructureID" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreditRatingModys" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreditRatingSPs" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreditRatingFitch" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreditRatingING" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CreatedBy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="LastEdited" Precision="3" />
+          <Property Type="String" Name="Gurantor" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Grid" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SummitCreditEntity" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="QuotesAndTrades">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="LoanName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TimeStamp" Type="DateTime" Precision="3" />
+          <Property Name="CounterParty" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="BidPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="OfferPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="BidSpread" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="OfferSpread" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Traded" Type="Boolean" />
+          <Property Name="MarketValue" Type="Decimal" Precision="18" Scale="0" />
+          <Property Type="Int32" Name="CountryID" />
+          <Property Type="String" Name="Country" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="AvgLifeDisc" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="AvgLifeRiskDisc" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="AvgLifeNonDisc" Precision="18" Scale="2" />
+          <Property Type="DateTime" Name="SettlementDate" Precision="3" />
+          <Property Type="String" Name="Margin" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="AverageLife" Precision="18" Scale="5" />
+          <Property Type="DateTime" Name="TradedDate" Precision="3" />
+        </EntityType>
+        <EntityType Name="tblCountry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" Nullable="false" />
+          <NavigationProperty Name="tblHoliday" Relationship="LoanPriceModel.FK_tblHoliday_tblCountry" FromRole="tblCountry" ToRole="tblHoliday" />
+        </EntityType>
+        <EntityType Name="tblHoliday">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="HolidayName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DayObserved" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblCountry" Relationship="LoanPriceModel.FK_tblHoliday_tblCountry" FromRole="tblHoliday" ToRole="tblCountry" />
+        </EntityType>
+        <Association Name="FK_tblHoliday_tblCountry">
+          <End Role="tblCountry" Type="LoanPriceModel.tblCountry" Multiplicity="0..1" />
+          <End Role="tblHoliday" Type="LoanPriceModel.tblHoliday" Multiplicity="*" />
+        </Association>
+        <EntityType Name="tblActivityLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="UserID" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Activity" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Message" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ActivityDate" Nullable="false" Precision="3" />
+          <Property Type="String" Name="Exception" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SessionID" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IP" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="URL" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Login" Relationship="LoanPriceModel.FK_tblActivityLog_Login" FromRole="tblActivityLog" ToRole="Login" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Role" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Status" Nullable="false" />
+          <Property Type="Boolean" Name="IsLocked" Nullable="false" />
+          <Property Type="Int32" Name="FailedAttempts" Nullable="false" />
+          <Property Type="DateTime" Name="LastPasswordReset" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tblActivityLogs" Relationship="LoanPriceModel.FK_tblActivityLog_Login" FromRole="Login" ToRole="tblActivityLog" />
+          <NavigationProperty Name="PasswordHistories" Relationship="LoanPriceModel.FK_PasswordHistory_Login" FromRole="Login" ToRole="PasswordHistory" />
+          <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsLogin" />
+        </EntityType>
+        <Association Name="FK_tblActivityLog_Login">
+          <End Type="LoanPriceModel.Login" Role="Login" Multiplicity="1" />
+          <End Type="LoanPriceModel.tblActivityLog" Role="tblActivityLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Login">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tblActivityLog">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PasswordHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="Password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ChangedPassword" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ChangedDate" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Login" Relationship="LoanPriceModel.FK_PasswordHistory_Login" FromRole="PasswordHistory" ToRole="Login" />
+        </EntityType>
+        <Association Name="FK_PasswordHistory_Login">
+          <End Type="LoanPriceModel.Login" Role="Login" Multiplicity="1" />
+          <End Type="LoanPriceModel.PasswordHistory" Role="PasswordHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Login">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PasswordHistory">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="EmailGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="GroupName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsEmailReceiver" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblEmailQue">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="SendTime" Nullable="false" Precision="3" />
+          <Property Type="Boolean" Name="IsSent" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Setting">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Value" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreatedOn" Precision="3" />
+        </EntityType>
+        <EntityType Name="DuplicateRecord">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="LoanName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TimeStamp" Precision="3" />
+          <Property Type="String" Name="CounterParty" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="BidPrice" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="OfferPrice" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="BidSpread" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="OfferSpread" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="Traded" />
+          <Property Type="Decimal" Name="MarketValue" Precision="18" Scale="0" />
+          <Property Type="Int32" Name="CountryID" />
+          <Property Type="String" Name="Country" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DuplicateLoan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="CodeName" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Borrower" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Country" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Sector" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Signing_Date" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Maturity_Date" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FixedOrFloating" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Margin" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Currency" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CouponFrequency" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FacilitySize" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Bilateral" />
+          <Property Type="String" Name="Amortizing" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CouponDate" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Notional" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="AmortisationsStartPoint" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="NoOfAmortisationPoint" />
+        </EntityType>
+        <EntityType Name="CounterParty">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Region" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Borrower">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Region" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Grid" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SummitCreditEntity" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Currency">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Currancy" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CreditRating">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="CreditAgencyID" />
+          <Property Type="String" Name="Rating" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="CreditAgency">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="CreditAgency1" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EURCurve">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="UploadDate" Precision="3" />
+          <Property Type="DateTime" Name="SummitGenDate" Precision="3" />
+          <Property Type="Decimal" Name="Rate" Precision="18" Scale="5" />
+          <Property Type="Decimal" Name="DiscFreq" Precision="18" Scale="5" />
+          <Property Type="String" Name="CCY" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CurveIndex" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Days" />
+          <Property Type="DateTime" Name="RateDate" Precision="3" />
+          <Property Type="Boolean" Name="IsNew" />
+        </EntityType>
+        <EntityType Name="USDCurve">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="UploadDate" Precision="3" />
+          <Property Type="DateTime" Name="SummitGenDate" Precision="3" />
+          <Property Type="Decimal" Name="Rate" Precision="18" Scale="5" />
+          <Property Type="Decimal" Name="DiscFreq" Precision="18" Scale="5" />
+          <Property Type="String" Name="CCY" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CurveIndex" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Days" />
+          <Property Type="DateTime" Name="RateDate" Precision="3" />
+          <Property Type="Boolean" Name="IsNew" />
+        </EntityType>
+        <EntityType Name="LoanHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="LoanName" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="LastModified" Precision="3" />
+          <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="LoanSchedule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="LoanID" />
+          <Property Type="DateTime" Name="StartDate" Precision="3" />
+          <Property Type="DateTime" Name="EndDate" Precision="3" />
+          <Property Type="Decimal" Name="Notation" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Factor" Precision="10" Scale="2" />
+          <Property Type="DateTime" Name="CreatedOn" Precision="3" />
+          <Property Type="Decimal" Name="CoupFrac" Precision="10" Scale="2" />
+          <Property Type="Decimal" Name="Amortisation" Precision="18" Scale="7" />
+          <Property Type="Decimal" Name="FloatingRate" Precision="18" Scale="5" />
+          <Property Type="Decimal" Name="Spread" Precision="18" Scale="5" />
+          <Property Type="Decimal" Name="AllInRate" Precision="18" Scale="5" />
+          <Property Type="Decimal" Name="Interest" Precision="18" Scale="2" />
+          <Property Type="Decimal" Name="AmortisationInt" Precision="18" Scale="2" />
+          <Property Type="DateTime" Name="CouponPaymentDate" Precision="3" />
+          <Property Type="Decimal" Name="RiskFreeDP1" Precision="18" Scale="7" />
+          <Property Type="Decimal" Name="RiskFreeDP2" Precision="18" Scale="7" />
+          <Property Type="Int32" Name="Days" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LoanPriceModelStoreContainer" CdmEntityContainer="LoanPriceEntities">
+          <EntitySetMapping Name="Loans">
+            <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.Loans)">
+              <MappingFragment StoreEntitySet="Loans">
+                <ScalarProperty Name="SummitCreditEntity" ColumnName="SummitCreditEntity" />
+                <ScalarProperty Name="Grid" ColumnName="Grid" />
+                <ScalarProperty Name="Gurantor" ColumnName="Gurantor" />
+                <ScalarProperty Name="LastEdited" ColumnName="LastEdited" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreditRatingING" ColumnName="CreditRatingING" />
+                <ScalarProperty Name="CreditRatingFitch" ColumnName="CreditRatingFitch" />
+                <ScalarProperty Name="CreditRatingSPs" ColumnName="CreditRatingSPs" />
+                <ScalarProperty Name="CreditRatingModys" ColumnName="CreditRatingModys" />
+                <ScalarProperty Name="StructureID" ColumnName="StructureID" />
+                <ScalarProperty Name="NoOfAmortisationPoint" ColumnName="NoOfAmortisationPoint" />
+                <ScalarProperty Name="Fixed_Floating" ColumnName="Fixed/Floating" />
+                <ScalarProperty Name="PP" ColumnName="PP" />
+                <ScalarProperty Name="CreditRating" ColumnName="CreditRating" />
+                <ScalarProperty Name="AmortisationsStartPoint" ColumnName="AmortisationsStartPoint" />
+                <ScalarProperty Name="Notional" ColumnName="Notional" />
+                <ScalarProperty Name="CouponDate" ColumnName="CouponDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CodeName" ColumnName="CodeName" />
+                <ScalarProperty Name="Borrower" ColumnName="Borrower" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="Signing_Date" ColumnName="Signing Date" />
+                <ScalarProperty Name="Maturity_Date" ColumnName="Maturity Date" />
+                <ScalarProperty Name="FixedOrFloating" ColumnName="FixedOrFloating" />
+                <ScalarProperty Name="Margin" ColumnName="Margin" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="CouponFrequency" ColumnName="CouponFrequency" />
+                <ScalarProperty Name="FacilitySize" ColumnName="FacilitySize" />
+                <ScalarProperty Name="Bilateral" ColumnName="Bilateral" />
+                <ScalarProperty Name="Amortizing" ColumnName="Amortizing" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QuotesAndTrades">
+            <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.QuotesAndTrades)">
+              <MappingFragment StoreEntitySet="QuotesAndTrades">
+                <ScalarProperty Name="TradedDate" ColumnName="TradedDate" />
+                <ScalarProperty Name="AverageLife" ColumnName="AverageLife" />
+                <ScalarProperty Name="Margin" ColumnName="Margin" />
+                <ScalarProperty Name="SettlementDate" ColumnName="SettlementDate" />
+                <ScalarProperty Name="AvgLifeNonDisc" ColumnName="AvgLifeNonDisc" />
+                <ScalarProperty Name="AvgLifeRiskDisc" ColumnName="AvgLifeRiskDisc" />
+                <ScalarProperty Name="AvgLifeDisc" ColumnName="AvgLifeDisc" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LoanName" ColumnName="LoanName" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="CounterParty" ColumnName="CounterParty" />
+                <ScalarProperty Name="BidPrice" ColumnName="BidPrice" />
+                <ScalarProperty Name="OfferPrice" ColumnName="OfferPrice" />
+                <ScalarProperty Name="BidSpread" ColumnName="BidSpread" />
+                <ScalarProperty Name="OfferSpread" ColumnName="OfferSpread" />
+                <ScalarProperty Name="Traded" ColumnName="Traded" />
+                <ScalarProperty Name="MarketValue" ColumnName="MarketValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCountry">
+            <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.tblCountry)">
+              <MappingFragment StoreEntitySet="tblCountry">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblHoliday">
+            <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.tblHoliday)">
+              <MappingFragment StoreEntitySet="tblHoliday">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HolidayName" ColumnName="HolidayName" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="DayObserved" ColumnName="DayObserved" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_tblHoliday_tblCountry" TypeName="LoanPriceModel.FK_tblHoliday_tblCountry" StoreEntitySet="tblHoliday">
+            <EndProperty Name="tblCountry">
+              <ScalarProperty Name="ID" ColumnName="CountryID" />
+            </EndProperty>
+            <EndProperty Name="tblHoliday">
+              <ScalarProperty Name="ID" ColumnName="ID" />
+            </EndProperty>
+            <Condition ColumnName="CountryID" IsNull="false" />
+          </AssociationSetMapping>
+          <EntitySetMapping Name="tblActivityLogs">
+            <EntityTypeMapping TypeName="LoanPriceModel.tblActivityLog">
+              <MappingFragment StoreEntitySet="tblActivityLog">
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="Exception" ColumnName="Exception" />
+                <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Activity" ColumnName="Activity" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Logins">
+            <EntityTypeMapping TypeName="LoanPriceModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="IsLogin" ColumnName="IsLogin" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="LastPasswordReset" ColumnName="LastPasswordReset" />
+                <ScalarProperty Name="FailedAttempts" ColumnName="FailedAttempts" />
+                <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PasswordHistories">
+            <EntityTypeMapping TypeName="LoanPriceModel.PasswordHistory">
+              <MappingFragment StoreEntitySet="PasswordHistory">
+                <ScalarProperty Name="ChangedDate" ColumnName="ChangedDate" />
+                <ScalarProperty Name="ChangedPassword" ColumnName="ChangedPassword" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmailGroups">
+            <EntityTypeMapping TypeName="LoanPriceModel.EmailGroup">
+              <MappingFragment StoreEntitySet="EmailGroups">
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Groups">
+            <EntityTypeMapping TypeName="LoanPriceModel.Group">
+              <MappingFragment StoreEntitySet="Groups">
+                <ScalarProperty Name="IsEmailReceiver" ColumnName="IsEmailReceiver" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblEmailQues">
+            <EntityTypeMapping TypeName="LoanPriceModel.tblEmailQue">
+              <MappingFragment StoreEntitySet="tblEmailQue">
+                <ScalarProperty Name="IsSent" ColumnName="IsSent" />
+                <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Settings">
+            <EntityTypeMapping TypeName="LoanPriceModel.Setting">
+              <MappingFragment StoreEntitySet="Settings">
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DuplicateRecords">
+            <EntityTypeMapping TypeName="LoanPriceModel.DuplicateRecord">
+              <MappingFragment StoreEntitySet="DuplicateRecords">
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+                <ScalarProperty Name="MarketValue" ColumnName="MarketValue" />
+                <ScalarProperty Name="Traded" ColumnName="Traded" />
+                <ScalarProperty Name="OfferSpread" ColumnName="OfferSpread" />
+                <ScalarProperty Name="BidSpread" ColumnName="BidSpread" />
+                <ScalarProperty Name="OfferPrice" ColumnName="OfferPrice" />
+                <ScalarProperty Name="BidPrice" ColumnName="BidPrice" />
+                <ScalarProperty Name="CounterParty" ColumnName="CounterParty" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="LoanName" ColumnName="LoanName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DuplicateLoans">
+            <EntityTypeMapping TypeName="LoanPriceModel.DuplicateLoan">
+              <MappingFragment StoreEntitySet="DuplicateLoans">
+                <ScalarProperty Name="NoOfAmortisationPoint" ColumnName="NoOfAmortisationPoint" />
+                <ScalarProperty Name="AmortisationsStartPoint" ColumnName="AmortisationsStartPoint" />
+                <ScalarProperty Name="Notional" ColumnName="Notional" />
+                <ScalarProperty Name="CouponDate" ColumnName="CouponDate" />
+                <ScalarProperty Name="Amortizing" ColumnName="Amortizing" />
+                <ScalarProperty Name="Bilateral" ColumnName="Bilateral" />
+                <ScalarProperty Name="FacilitySize" ColumnName="FacilitySize" />
+                <ScalarProperty Name="CouponFrequency" ColumnName="CouponFrequency" />
+                <ScalarProperty Name="Currency" ColumnName="Currency" />
+                <ScalarProperty Name="Margin" ColumnName="Margin" />
+                <ScalarProperty Name="FixedOrFloating" ColumnName="FixedOrFloating" />
+                <ScalarProperty Name="Maturity_Date" ColumnName="Maturity Date" />
+                <ScalarProperty Name="Signing_Date" ColumnName="Signing Date" />
+                <ScalarProperty Name="Sector" ColumnName="Sector" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Borrower" ColumnName="Borrower" />
+                <ScalarProperty Name="CodeName" ColumnName="CodeName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CounterParties">
+            <EntityTypeMapping TypeName="LoanPriceModel.CounterParty">
+              <MappingFragment StoreEntitySet="CounterParty">
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Borrowers">
+            <EntityTypeMapping TypeName="LoanPriceModel.Borrower">
+              <MappingFragment StoreEntitySet="Borrowers">
+                <ScalarProperty Name="SummitCreditEntity" ColumnName="SummitCreditEntity" />
+                <ScalarProperty Name="Grid" ColumnName="Grid" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Currencies">
+            <EntityTypeMapping TypeName="LoanPriceModel.Currency">
+              <MappingFragment StoreEntitySet="Currencies">
+                <ScalarProperty Name="Currancy" ColumnName="Currancy" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CreditRatings">
+            <EntityTypeMapping TypeName="LoanPriceModel.CreditRating">
+              <MappingFragment StoreEntitySet="CreditRatings">
+                <ScalarProperty Name="Rating" ColumnName="Rating" />
+                <ScalarProperty Name="CreditAgencyID" ColumnName="CreditAgencyID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CreditAgencies">
+            <EntityTypeMapping TypeName="LoanPriceModel.CreditAgency">
+              <MappingFragment StoreEntitySet="CreditAgencies">
+                <ScalarProperty Name="CreditAgency1" ColumnName="CreditAgency" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EURCurves">
+            <EntityTypeMapping TypeName="LoanPriceModel.EURCurve">
+              <MappingFragment StoreEntitySet="EURCurves">
+                <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+                <ScalarProperty Name="RateDate" ColumnName="RateDate" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="CurveIndex" ColumnName="CurveIndex" />
+                <ScalarProperty Name="CCY" ColumnName="CCY" />
+                <ScalarProperty Name="DiscFreq" ColumnName="DiscFreq" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="SummitGenDate" ColumnName="SummitGenDate" />
+                <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USDCurves">
+            <EntityTypeMapping TypeName="LoanPriceModel.USDCurve">
+              <MappingFragment StoreEntitySet="USDCurves">
+                <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+                <ScalarProperty Name="RateDate" ColumnName="RateDate" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="CurveIndex" ColumnName="CurveIndex" />
+                <ScalarProperty Name="CCY" ColumnName="CCY" />
+                <ScalarProperty Name="DiscFreq" ColumnName="DiscFreq" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="SummitGenDate" ColumnName="SummitGenDate" />
+                <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoanHistories">
+            <EntityTypeMapping TypeName="LoanPriceModel.LoanHistory">
+              <MappingFragment StoreEntitySet="LoanHistory">
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LoanName" ColumnName="LoanName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoanSchedules">
+            <EntityTypeMapping TypeName="LoanPriceModel.LoanSchedule">
+              <MappingFragment StoreEntitySet="LoanSchedule">
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="RiskFreeDP2" ColumnName="RiskFreeDP2" />
+                <ScalarProperty Name="RiskFreeDP1" ColumnName="RiskFreeDP1" />
+                <ScalarProperty Name="CouponPaymentDate" ColumnName="CouponPaymentDate" />
+                <ScalarProperty Name="AmortisationInt" ColumnName="AmortisationInt" />
+                <ScalarProperty Name="Interest" ColumnName="Interest" />
+                <ScalarProperty Name="AllInRate" ColumnName="AllInRate" />
+                <ScalarProperty Name="Spread" ColumnName="Spread" />
+                <ScalarProperty Name="FloatingRate" ColumnName="FloatingRate" />
+                <ScalarProperty Name="Amortisation" ColumnName="Amortisation" />
+                <ScalarProperty Name="CoupFrac" ColumnName="CoupFrac" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="Factor" ColumnName="Factor" />
+                <ScalarProperty Name="Notation" ColumnName="Notation" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="LoanID" ColumnName="LoanID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="DateCalculatorDB" xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+        <EntityTypeShape EntityType="LoanPriceModel.Loans" Width="1.5" PointX="0.75" PointY="3.75" Height="3.7109993489583322" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoanPriceModel.QuotesAndTrades" Width="1.5" PointX="5.25" PointY="0.625" Height="2.941793619791667" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoanPriceModel.tblCountry" Width="1.5" PointX="0.75" PointY="1" Height="1.7879850260416668" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoanPriceModel.tblHoliday" Width="1.5" PointX="3" PointY="0.875" Height="1.9802864583333335" IsExpanded="true" />
+        <AssociationConnector Association="LoanPriceModel.FK_tblHoliday_tblCountry" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.8939925130208333" />
+          <ConnectorPoint PointX="3" PointY="1.8939925130208333" /></AssociationConnector>
+        <EntityTypeShape EntityType="LoanPriceModel.tblActivityLog" Width="1.5" PointX="3.4712349285703317" PointY="7.44672081221208" />
+        <EntityTypeShape EntityType="LoanPriceModel.Login" Width="1.5" PointX="10.928567317746843" PointY="10.83229510990544" />
+        <AssociationConnector Association="LoanPriceModel.FK_tblActivityLog_Login" />
+        <EntityTypeShape EntityType="LoanPriceModel.PasswordHistory" Width="1.5" PointX="8.0921776015740718" PointY="16.492741964986894" />
+        <AssociationConnector Association="LoanPriceModel.FK_PasswordHistory_Login" />
+        <EntityTypeShape EntityType="LoanPriceModel.EmailGroup" Width="1.5" PointX="3.4577480384417569" PointY="9.0661787879961437" />
+        <EntityTypeShape EntityType="LoanPriceModel.Group" Width="1.5" PointX="11.503769103206587" PointY="27.299205599026383" />
+        <EntityTypeShape EntityType="LoanPriceModel.tblEmailQue" Width="1.5" PointX="2.8814994538582392" PointY="2.1428443948472125" />
+        <EntityTypeShape EntityType="LoanPriceModel.Setting" Width="1.5" PointX="2.1519844840057121" PointY="9.43231161377966" />
+        <EntityTypeShape EntityType="LoanPriceModel.DuplicateRecord" Width="1.5" PointX="9.99758345354236" PointY="28.042408613507828" />
+        <EntityTypeShape EntityType="LoanPriceModel.DuplicateLoan" Width="1.5" PointX="10.989446237212722" PointY="8.6909804682671" />
+        <EntityTypeShape EntityType="LoanPriceModel.CounterParty" Width="1.5" PointX="2.6851916046278514" PointY="2.6571863306021255" />
+        <EntityTypeShape EntityType="LoanPriceModel.Borrower" Width="1.5" PointX="6.8847379343978767" PointY="5.54845094939156" />
+        <EntityTypeShape EntityType="LoanPriceModel.Currency" Width="1.5" PointX="5.89007462276615" PointY="24.343333151351349" />
+        <EntityTypeShape EntityType="LoanPriceModel.CreditRating" Width="1.5" PointX="1.1680254103466987" PointY="19.688535177935165" />
+        <EntityTypeShape EntityType="LoanPriceModel.CreditAgency" Width="1.5" PointX="7.1327249329223879" PointY="8.72274941612163" />
+        <EntityTypeShape EntityType="LoanPriceModel.EURCurve" Width="1.5" PointX="3.7072910311200147" PointY="24.42006654684435" />
+        <EntityTypeShape EntityType="LoanPriceModel.USDCurve" Width="1.5" PointX="2.4547332275913716" PointY="1.5965291269107391" />
+        <EntityTypeShape EntityType="LoanPriceModel.LoanHistory" Width="1.5" PointX="11.663945350639496" PointY="2.9589925273130615" />
+        <EntityTypeShape EntityType="LoanPriceModel.LoanSchedule" Width="1.5" PointX="3.07976790847246" PointY="12.603963947204857" />
+        </Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

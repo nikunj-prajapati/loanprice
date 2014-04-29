@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="LoanPricerWebBased.Main" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register Src="MessageBox.ascx" TagName="MessageBox" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>LoanAnalyser</title>
+    <%--<link href="~/style/Main.css" rel="stylesheet" type="text/css" runat="server" />--%>
+
+    <%-- <link href="~/style/Main.css" rel="stylesheet" type="text/css" />--%>
+    <%-- <link href="~/style/style-metronic.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/pages/login.css" rel="stylesheet" type="text/css" />--%>
+    <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+    <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+
+    <link href="~/style/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/style-metronic.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/style/pages/login.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%-- <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" EnableScriptLocalization="true" EnableScriptGlobalization="true">
+        </asp:ToolkitScriptManager>--%>
+        <telerik:RadScriptManager runat="server" ID="RadScriptManager1" EnableScriptLocalization="true" EnableScriptGlobalization="true">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+
+            </Scripts>
+        </telerik:RadScriptManager>
+        <div id="MainData">
+            <%--<div id="Header">
+                <div class="header_txt">
+                    RealEdge Associates Ltd
+                </div>
+                <div class="login_area">
+                    <asp:Label ID="lblUserName" runat="server" Text="User Name"></asp:Label>
+                    
+                    <asp:HyperLink ID="hlLogOff" runat="server" Text="Log Off" NavigateUrl="~/LogOff.aspx"></asp:HyperLink>
+
+                </div>
+            </div>--%>
+            <div class="header navbar navbar-inverse navbar-fixed-top">
+                <!-- BEGIN TOP NAVIGATION BAR -->
+                <div class="header-inner">
+                    <!-- BEGIN LOGO -->
+                    <div style="margin-left: 20px">
+                        <a href="Default.aspx" class="navbar-brand" style="color: white; font-size: 24px">realedge associates
+                        </a>
+                    </div>
+                    <!-- END LOGO -->
+                    <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+                    <!-- END RESPONSIVE MENU TOGGLER -->
+                    <!-- BEGIN TOP NAVIGATION MENU -->
+
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- BEGIN NOTIFICATION DROPDOWN -->
+
+                        <!-- END NOTIFICATION DROPDOWN -->
+                        <!-- BEGIN INBOX DROPDOWN -->
+
+                        <!-- END INBOX DROPDOWN -->
+                        <!-- BEGIN TODO DROPDOWN -->
+
+                        <!-- END TODO DROPDOWN -->
+                        <!-- BEGIN USER LOGIN DROPDOWN -->
+                        <%--  <li class="dropdown-user" style="margin-top:8px">--%>
+                        <table style="width: 800px">
+                            <tr>
+                                <td style="width: 50%; text-align: center">
+                                    <asp:Label Style="color: Black; font-size: 18px" ID="lblUserName" runat="server"></asp:Label>
+
+                                </td>
+                                <td style="width: 30%">
+                                    <asp:HyperLink ID="hlAdministration" runat="server" Visible="false" Style="float: right; font-size: 16px" ForeColor="White" Text="Administration" NavigateUrl="~/Administration.aspx"></asp:HyperLink>
+
+                                </td>
+                                <td style="width: 20%; text-align: center">
+                                    <a href="~/Logout.aspx" id="lnkLogout" runat="server" style="color: white; font-size: 16px">Logout</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <%--  </li>--%>
+
+                        <li style="margin-right: 200px; margin-top: 8px"></li>
+                        <li class="dropdown-user"></li>
+                        <!-- END USER LOGIN DROPDOWN -->
+                    </ul>
+                    <!-- END TOP NAVIGATION MENU -->
+                </div>
+                <!-- END TOP NAVIGATION BAR -->
+            </div>
+            <div id="notification">
+                &nbsp;
+            </div>
+            <div id="Content">
+                <div id="mainContent">
+                    <h2>
+                        <%-- <asp:Label ID="Label1" runat="server" ForeColor="White" Text="LOAN ANALYSIS AND PRICING SYSTEM (LAPS 1.0)"></asp:Label>--%>
+                    </h2>
+                    <asp:Label ID="lblAdministration" runat="server" Visible="false" Text="Administration Mode" Font-Bold="true" ForeColor="White" Style="float: left;"></asp:Label>
+
+                    <div style="clear: both; margin-top: 32px"></div>
+                    <table style="margin-left: 40px; background-color: black; color: #00D52B; font-size: 12px; margin-bottom: 10px">
+                        <tr>
+                            <td style="width: 400px; text-align: center">
+                                <asp:UpdatePanel ID="upPnlMain" runat="server">
+                                    <ContentTemplate>
+
+                                    
+                                <label id="lblDetails" runat="server"></label>
+                                        </ContentTemplate>
+                                    <Triggers>
+                                        <asp:AsyncPostBackTrigger ControlID="tmrLoanDiv" EventName="Tick" />
+                                    </Triggers>
+                                </asp:UpdatePanel>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <p>
+                        &nbsp;
+                    </p>
+                    <br />
+                </div>
+            </div>
+            <div class="footer" style="background-color: #6C7FBD">
+                <div class="footer-inner">
+                    2013 &copy; RealEdge Associates
+                </div>
+                <div class="footer-tools">
+                </div>
+            </div>
+
+
+            <asp:Timer ID="tmrLoanDiv" runat="server" Interval="20000" OnTick="tmrLoanDiv_Tick">
+            </asp:Timer>
+        </div>
+        <!-- Message Box -->
+        <%--<uc1:MessageBox ID="MyMessageBox" runat="server" />--%>
+    </form>
+</body>
+</html>

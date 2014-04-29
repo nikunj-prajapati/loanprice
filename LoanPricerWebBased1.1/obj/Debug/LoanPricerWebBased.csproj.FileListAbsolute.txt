@@ -1,0 +1,249 @@
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.csprojResolveAssemblyReference.cache
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\AjaxControlToolkit.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\AjaxMin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\DAL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\HtmlAgilityPack.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\itextsharp.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.Owin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.Web.Infrastructure.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Newtonsoft.Json.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Owin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\DAL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\HtmlAgilityPack.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\HtmlAgilityPack.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.Owin.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\Newtonsoft.Json.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\ar\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\cs\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\de\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\es\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\fr\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\he\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\hi\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\it\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\ja\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\ko\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\nl\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\pl\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\pt\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\ru\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\LoanPricerWebBased.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\bin\LoanPricerWebBased.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.1\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\LoanPricerWebBased.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\LoanPricerWebBased.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\AjaxControlToolkit.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\AjaxMin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\BLL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\DAL.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\HtmlAgilityPack.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\itextsharp.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Web.Infrastructure.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Newtonsoft.Json.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Owin.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\BLL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\DAL.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\HtmlAgilityPack.pdb
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\HtmlAgilityPack.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Newtonsoft.Json.xml
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ar\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\cs\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\de\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\es\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\fr\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\he\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\hi\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\it\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ja\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ko\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\nl\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\pl\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\pt\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ru\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.csprojResolveAssemblyReference.cache
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.dll
+C:\D-drive\OnGoingClients\Ajay\FromAjay\LoanPricerWebBased2.2\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\LoanPricerWebBased.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\LoanPricerWebBased.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\AjaxControlToolkit.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\AjaxMin.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\BLL.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\DAL.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\HtmlAgilityPack.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\itextsharp.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Web.Infrastructure.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Newtonsoft.Json.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Owin.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Telerik.Web.UI.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Telerik.Web.UI.Skins.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\BLL.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\DAL.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\HtmlAgilityPack.pdb
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\HtmlAgilityPack.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Newtonsoft.Json.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\Telerik.Web.UI.xml
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ar\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\cs\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\de\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\es\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\fr\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\he\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\hi\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\it\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ja\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ko\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\nl\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\pl\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\pt\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\ru\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.csprojResolveAssemblyReference.cache
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.dll
+D:\Nik Projects\LoanPricerWebBased2.4\LoanPricerWebBased2.2\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.pdb
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\LoanPricerWebBased.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\LoanPricerWebBased.pdb
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\AjaxControlToolkit.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\AjaxMin.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\BLL.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\DAL.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\HtmlAgilityPack.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\itextsharp.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Web.Infrastructure.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Newtonsoft.Json.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Owin.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\BLL.pdb
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\DAL.pdb
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\HtmlAgilityPack.pdb
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\HtmlAgilityPack.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Newtonsoft.Json.xml
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ar\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\cs\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\de\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\es\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\fr\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\he\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\hi\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\it\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ja\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ko\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\nl\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\pl\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\pt\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ru\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.csprojResolveAssemblyReference.cache
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.dll
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.pdb
+D:\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Telerik.Web.UI.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\LoanPricerWebBased.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\LoanPricerWebBased.pdb
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\AjaxControlToolkit.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\AjaxMin.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\BLL.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\DAL.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\HtmlAgilityPack.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\itextsharp.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Web.Infrastructure.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Newtonsoft.Json.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Owin.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\SqlHelper.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Telerik.Web.UI.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Telerik.Web.UI.Skins.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\BLL.pdb
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\DAL.pdb
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\HtmlAgilityPack.pdb
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\HtmlAgilityPack.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.Owin.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Microsoft.Owin.Security.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Newtonsoft.Json.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\SqlHelper.pdb
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\Telerik.Web.UI.xml
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ar\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\cs\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\de\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\es\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\fr\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\he\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\hi\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\it\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ja\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ko\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\nl\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\pl\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\pt\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\ru\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\tr-TR\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\zh-CHS\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\bin\zh-CHT\AjaxControlToolkit.resources.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.csprojResolveAssemblyReference.cache
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.dll
+E:\Aseum\Aseum Projects\Loan\LoanPricerWebBased1.1\obj\Debug\LoanPricerWebBased.pdb

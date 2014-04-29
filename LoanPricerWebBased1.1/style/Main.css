@@ -1,0 +1,187 @@
+﻿body
+{
+    font-family: Calibri, Verdana, Sans-Serif;
+    background-color: #3f5F94;
+    color:#FFFFFF;
+
+}
+
+#MainData
+{
+    position: relative;
+    width: 1100px;
+    margin: auto;
+    background-color: #3f5F94;
+}
+
+#Header
+{
+    height: 60px;
+}
+#notification {
+    height:40px;
+    color: White;
+    font-weight: bold;
+}
+.header_txt
+{
+    background-color: #3f5F94;
+    text-align: right;
+    font-size:24px;
+    font-family: Arial Rounded MT Bold;
+    float: left;
+    width: 60%;
+}
+.login_area
+{
+    float: right;
+}
+.login_area span
+{
+    margin-right: 20px;
+    color: White;
+    font-weight: bold;
+}
+.login_area a
+{
+    color: White;
+}
+#Menu
+{
+    width: 1100px;
+    height: 40px;
+    background-color: #3f5F94;
+    float: left;
+}
+
+#Content
+{
+    width: 1100px;
+    /*height: 2000px;*/
+    min-height:600px;
+    background-color: #3f5F94;
+    float: left;
+}
+
+
+
+#Footer
+{
+    clear: both;
+    width: 1100px;
+    height: 40px;
+    background-color: #3F5F94;
+    text-align: center;
+}
+
+#tblLogin
+{
+    position: relative;
+    width: 1100px;
+    margin: auto;
+    background-color: #3f5f94;
+    font-size: 15pts;
+}
+
+#TabContainer1
+{
+    position: relative;
+    width: 1100px;
+    margin: auto;
+    background-color: #3f5F94;
+    font-size: 6pts;
+}
+
+#mainContent
+{
+    font-size: large;
+    background-color: #3f5F94;
+    width: 1100px;
+}
+
+.horizontal_scroll
+{
+    width: 1090px;
+    height: 300px;
+    overflow: auto;
+    scrollbar-base-color: #3f5F94;
+}
+/* Message box */
+.MsgBox
+{
+    border: 2px solid #cccccc;
+    background-color: #F0F0F0;
+    color: #1A1A1A;
+    width: 350px;
+    padding: 10px 20px 20px 20px;
+}
+
+.MsgBody
+{
+    clear: both;
+}
+
+.MsgBody h2
+{
+    font-weight: bold;
+}
+
+.MsgBody div
+{
+    margin: 20px 30px 30px 0px;
+}
+
+.msg_btn
+{
+    height: 40px;
+    width: 130px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+.LGBack {
+    background-color: #333333;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.cross {
+color:Red;
+    float: right;
+    width: 20px;
+    cursor: pointer;
+}
+
+.rounded_corners {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.rounded_corners5 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+#banner {
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    margin: 25px 125px 25px 125px;
+    padding: 30px;
+    height:450px;
+}
+    #banner div {
+        padding-top:20px;
+        text-align:center;
+    }
+        #banner div input {
+            padding:10px;
+            width:100px;
+            height:40px;
+            margin:10px;
+            font-weight:bold;
+            font-size:16px;
+        }

@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LoanPriceModelStoreContainer" CdmEntityContainer="LoanPriceEntities">
+    <EntitySetMapping Name="Loans">
+      <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.Loans)">
+        <MappingFragment StoreEntitySet="Loans">
+          <ScalarProperty Name="SummitCreditEntity" ColumnName="SummitCreditEntity" />
+          <ScalarProperty Name="Grid" ColumnName="Grid" />
+          <ScalarProperty Name="Gurantor" ColumnName="Gurantor" />
+          <ScalarProperty Name="LastEdited" ColumnName="LastEdited" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreditRatingING" ColumnName="CreditRatingING" />
+          <ScalarProperty Name="CreditRatingFitch" ColumnName="CreditRatingFitch" />
+          <ScalarProperty Name="CreditRatingSPs" ColumnName="CreditRatingSPs" />
+          <ScalarProperty Name="CreditRatingModys" ColumnName="CreditRatingModys" />
+          <ScalarProperty Name="StructureID" ColumnName="StructureID" />
+          <ScalarProperty Name="NoOfAmortisationPoint" ColumnName="NoOfAmortisationPoint" />
+          <ScalarProperty Name="Fixed_Floating" ColumnName="Fixed/Floating" />
+          <ScalarProperty Name="PP" ColumnName="PP" />
+          <ScalarProperty Name="CreditRating" ColumnName="CreditRating" />
+          <ScalarProperty Name="AmortisationsStartPoint" ColumnName="AmortisationsStartPoint" />
+          <ScalarProperty Name="Notional" ColumnName="Notional" />
+          <ScalarProperty Name="CouponDate" ColumnName="CouponDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CodeName" ColumnName="CodeName" />
+          <ScalarProperty Name="Borrower" ColumnName="Borrower" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Signing_Date" ColumnName="Signing Date" />
+          <ScalarProperty Name="Maturity_Date" ColumnName="Maturity Date" />
+          <ScalarProperty Name="FixedOrFloating" ColumnName="FixedOrFloating" />
+          <ScalarProperty Name="Margin" ColumnName="Margin" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="CouponFrequency" ColumnName="CouponFrequency" />
+          <ScalarProperty Name="FacilitySize" ColumnName="FacilitySize" />
+          <ScalarProperty Name="Bilateral" ColumnName="Bilateral" />
+          <ScalarProperty Name="Amortizing" ColumnName="Amortizing" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuotesAndTrades">
+      <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.QuotesAndTrades)">
+        <MappingFragment StoreEntitySet="QuotesAndTrades">
+          <ScalarProperty Name="TradedDate" ColumnName="TradedDate" />
+          <ScalarProperty Name="AverageLife" ColumnName="AverageLife" />
+          <ScalarProperty Name="Margin" ColumnName="Margin" />
+          <ScalarProperty Name="SettlementDate" ColumnName="SettlementDate" />
+          <ScalarProperty Name="AvgLifeNonDisc" ColumnName="AvgLifeNonDisc" />
+          <ScalarProperty Name="AvgLifeRiskDisc" ColumnName="AvgLifeRiskDisc" />
+          <ScalarProperty Name="AvgLifeDisc" ColumnName="AvgLifeDisc" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LoanName" ColumnName="LoanName" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="CounterParty" ColumnName="CounterParty" />
+          <ScalarProperty Name="BidPrice" ColumnName="BidPrice" />
+          <ScalarProperty Name="OfferPrice" ColumnName="OfferPrice" />
+          <ScalarProperty Name="BidSpread" ColumnName="BidSpread" />
+          <ScalarProperty Name="OfferSpread" ColumnName="OfferSpread" />
+          <ScalarProperty Name="Traded" ColumnName="Traded" />
+          <ScalarProperty Name="MarketValue" ColumnName="MarketValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCountry">
+      <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.tblCountry)">
+        <MappingFragment StoreEntitySet="tblCountry">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblHoliday">
+      <EntityTypeMapping TypeName="IsTypeOf(LoanPriceModel.tblHoliday)">
+        <MappingFragment StoreEntitySet="tblHoliday">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HolidayName" ColumnName="HolidayName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="DayObserved" ColumnName="DayObserved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_tblHoliday_tblCountry" TypeName="LoanPriceModel.FK_tblHoliday_tblCountry" StoreEntitySet="tblHoliday">
+      <EndProperty Name="tblCountry">
+        <ScalarProperty Name="ID" ColumnName="CountryID" />
+      </EndProperty>
+      <EndProperty Name="tblHoliday">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="CountryID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="tblActivityLogs">
+      <EntityTypeMapping TypeName="LoanPriceModel.tblActivityLog">
+        <MappingFragment StoreEntitySet="tblActivityLog">
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+          <ScalarProperty Name="Exception" ColumnName="Exception" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="LoanPriceModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="IsLogin" ColumnName="IsLogin" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="LastPasswordReset" ColumnName="LastPasswordReset" />
+          <ScalarProperty Name="FailedAttempts" ColumnName="FailedAttempts" />
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PasswordHistories">
+      <EntityTypeMapping TypeName="LoanPriceModel.PasswordHistory">
+        <MappingFragment StoreEntitySet="PasswordHistory">
+          <ScalarProperty Name="ChangedDate" ColumnName="ChangedDate" />
+          <ScalarProperty Name="ChangedPassword" ColumnName="ChangedPassword" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailGroups">
+      <EntityTypeMapping TypeName="LoanPriceModel.EmailGroup">
+        <MappingFragment StoreEntitySet="EmailGroups">
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="LoanPriceModel.Group">
+        <MappingFragment StoreEntitySet="Groups">
+          <ScalarProperty Name="IsEmailReceiver" ColumnName="IsEmailReceiver" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEmailQues">
+      <EntityTypeMapping TypeName="LoanPriceModel.tblEmailQue">
+        <MappingFragment StoreEntitySet="tblEmailQue">
+          <ScalarProperty Name="IsSent" ColumnName="IsSent" />
+          <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="LoanPriceModel.Setting">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DuplicateRecords">
+      <EntityTypeMapping TypeName="LoanPriceModel.DuplicateRecord">
+        <MappingFragment StoreEntitySet="DuplicateRecords">
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="MarketValue" ColumnName="MarketValue" />
+          <ScalarProperty Name="Traded" ColumnName="Traded" />
+          <ScalarProperty Name="OfferSpread" ColumnName="OfferSpread" />
+          <ScalarProperty Name="BidSpread" ColumnName="BidSpread" />
+          <ScalarProperty Name="OfferPrice" ColumnName="OfferPrice" />
+          <ScalarProperty Name="BidPrice" ColumnName="BidPrice" />
+          <ScalarProperty Name="CounterParty" ColumnName="CounterParty" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="LoanName" ColumnName="LoanName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DuplicateLoans">
+      <EntityTypeMapping TypeName="LoanPriceModel.DuplicateLoan">
+        <MappingFragment StoreEntitySet="DuplicateLoans">
+          <ScalarProperty Name="NoOfAmortisationPoint" ColumnName="NoOfAmortisationPoint" />
+          <ScalarProperty Name="AmortisationsStartPoint" ColumnName="AmortisationsStartPoint" />
+          <ScalarProperty Name="Notional" ColumnName="Notional" />
+          <ScalarProperty Name="CouponDate" ColumnName="CouponDate" />
+          <ScalarProperty Name="Amortizing" ColumnName="Amortizing" />
+          <ScalarProperty Name="Bilateral" ColumnName="Bilateral" />
+          <ScalarProperty Name="FacilitySize" ColumnName="FacilitySize" />
+          <ScalarProperty Name="CouponFrequency" ColumnName="CouponFrequency" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Margin" ColumnName="Margin" />
+          <ScalarProperty Name="FixedOrFloating" ColumnName="FixedOrFloating" />
+          <ScalarProperty Name="Maturity_Date" ColumnName="Maturity Date" />
+          <ScalarProperty Name="Signing_Date" ColumnName="Signing Date" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Borrower" ColumnName="Borrower" />
+          <ScalarProperty Name="CodeName" ColumnName="CodeName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CounterParties">
+      <EntityTypeMapping TypeName="LoanPriceModel.CounterParty">
+        <MappingFragment StoreEntitySet="CounterParty">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Borrowers">
+      <EntityTypeMapping TypeName="LoanPriceModel.Borrower">
+        <MappingFragment StoreEntitySet="Borrowers">
+          <ScalarProperty Name="SummitCreditEntity" ColumnName="SummitCreditEntity" />
+          <ScalarProperty Name="Grid" ColumnName="Grid" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="LoanPriceModel.Currency">
+        <MappingFragment StoreEntitySet="Currencies">
+          <ScalarProperty Name="Currancy" ColumnName="Currancy" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditRatings">
+      <EntityTypeMapping TypeName="LoanPriceModel.CreditRating">
+        <MappingFragment StoreEntitySet="CreditRatings">
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="CreditAgencyID" ColumnName="CreditAgencyID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditAgencies">
+      <EntityTypeMapping TypeName="LoanPriceModel.CreditAgency">
+        <MappingFragment StoreEntitySet="CreditAgencies">
+          <ScalarProperty Name="CreditAgency1" ColumnName="CreditAgency" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EURCurves">
+      <EntityTypeMapping TypeName="LoanPriceModel.EURCurve">
+        <MappingFragment StoreEntitySet="EURCurves">
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="RateDate" ColumnName="RateDate" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="CurveIndex" ColumnName="CurveIndex" />
+          <ScalarProperty Name="CCY" ColumnName="CCY" />
+          <ScalarProperty Name="DiscFreq" ColumnName="DiscFreq" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="SummitGenDate" ColumnName="SummitGenDate" />
+          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USDCurves">
+      <EntityTypeMapping TypeName="LoanPriceModel.USDCurve">
+        <MappingFragment StoreEntitySet="USDCurves">
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="RateDate" ColumnName="RateDate" />
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="CurveIndex" ColumnName="CurveIndex" />
+          <ScalarProperty Name="CCY" ColumnName="CCY" />
+          <ScalarProperty Name="DiscFreq" ColumnName="DiscFreq" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="SummitGenDate" ColumnName="SummitGenDate" />
+          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoanHistories">
+      <EntityTypeMapping TypeName="LoanPriceModel.LoanHistory">
+        <MappingFragment StoreEntitySet="LoanHistory">
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LoanName" ColumnName="LoanName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoanSchedules">
+      <EntityTypeMapping TypeName="LoanPriceModel.LoanSchedule">
+        <MappingFragment StoreEntitySet="LoanSchedule">
+          <ScalarProperty Name="Days" ColumnName="Days" />
+          <ScalarProperty Name="RiskFreeDP2" ColumnName="RiskFreeDP2" />
+          <ScalarProperty Name="RiskFreeDP1" ColumnName="RiskFreeDP1" />
+          <ScalarProperty Name="CouponPaymentDate" ColumnName="CouponPaymentDate" />
+          <ScalarProperty Name="AmortisationInt" ColumnName="AmortisationInt" />
+          <ScalarProperty Name="Interest" ColumnName="Interest" />
+          <ScalarProperty Name="AllInRate" ColumnName="AllInRate" />
+          <ScalarProperty Name="Spread" ColumnName="Spread" />
+          <ScalarProperty Name="FloatingRate" ColumnName="FloatingRate" />
+          <ScalarProperty Name="Amortisation" ColumnName="Amortisation" />
+          <ScalarProperty Name="CoupFrac" ColumnName="CoupFrac" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Factor" ColumnName="Factor" />
+          <ScalarProperty Name="Notation" ColumnName="Notation" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="LoanID" ColumnName="LoanID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LoanPriceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LoanPriceModelStoreContainer">
+    <EntitySet Name="Borrowers" EntityType="LoanPriceModel.Store.Borrowers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CounterParty" EntityType="LoanPriceModel.Store.CounterParty" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CreditAgencies" EntityType="LoanPriceModel.Store.CreditAgencies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CreditRatings" EntityType="LoanPriceModel.Store.CreditRatings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Currencies" EntityType="LoanPriceModel.Store.Currencies" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DuplicateLoans" EntityType="LoanPriceModel.Store.DuplicateLoans" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DuplicateRecords" EntityType="LoanPriceModel.Store.DuplicateRecords" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmailGroups" EntityType="LoanPriceModel.Store.EmailGroups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EURCurves" EntityType="LoanPriceModel.Store.EURCurves" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Groups" EntityType="LoanPriceModel.Store.Groups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LoanHistory" EntityType="LoanPriceModel.Store.LoanHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Loans" EntityType="LoanPriceModel.Store.Loans" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LoanSchedule" EntityType="LoanPriceModel.Store.LoanSchedule" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Login" EntityType="LoanPriceModel.Store.Login" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PasswordHistory" EntityType="LoanPriceModel.Store.PasswordHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="QuotesAndTrades" EntityType="LoanPriceModel.Store.QuotesAndTrades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Settings" EntityType="LoanPriceModel.Store.Settings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblActivityLog" EntityType="LoanPriceModel.Store.tblActivityLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblCountry" EntityType="LoanPriceModel.Store.tblCountry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblEmailQue" EntityType="LoanPriceModel.Store.tblEmailQue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tblHoliday" EntityType="LoanPriceModel.Store.tblHoliday" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="USDCurves" EntityType="LoanPriceModel.Store.USDCurves" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_PasswordHistory_Login" Association="LoanPriceModel.Store.FK_PasswordHistory_Login">
+      <End Role="Login" EntitySet="Login" />
+      <End Role="PasswordHistory" EntitySet="PasswordHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblActivityLog_Login" Association="LoanPriceModel.Store.FK_tblActivityLog_Login">
+      <End Role="Login" EntitySet="Login" />
+      <End Role="tblActivityLog" EntitySet="tblActivityLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblHoliday_tblCountry" Association="LoanPriceModel.Store.FK_tblHoliday_tblCountry">
+      <End Role="tblCountry" EntitySet="tblCountry" />
+      <End Role="tblHoliday" EntitySet="tblHoliday" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Borrowers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Region" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="Grid" Type="varchar" MaxLength="100" />
+    <Property Name="SummitCreditEntity" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="CounterParty">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Region" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CreditAgencies">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreditAgency" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CreditRatings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CreditAgencyID" Type="int" />
+    <Property Name="Rating" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Currencies">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Currancy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DuplicateLoans">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodeName" Type="varchar" MaxLength="100" />
+    <Property Name="Borrower" Type="varchar" MaxLength="100" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Sector" Type="varchar" MaxLength="50" />
+    <Property Name="Signing Date" Type="varchar" MaxLength="50" />
+    <Property Name="Maturity Date" Type="varchar" MaxLength="50" />
+    <Property Name="FixedOrFloating" Type="varchar" MaxLength="50" />
+    <Property Name="Margin" Type="varchar" MaxLength="50" />
+    <Property Name="Currency" Type="varchar" MaxLength="50" />
+    <Property Name="CouponFrequency" Type="varchar" MaxLength="50" />
+    <Property Name="FacilitySize" Type="varchar" MaxLength="50" />
+    <Property Name="Bilateral" Type="bit" />
+    <Property Name="Amortizing" Type="varchar" MaxLength="50" />
+    <Property Name="CouponDate" Type="varchar" MaxLength="50" />
+    <Property Name="Notional" Type="varchar" MaxLength="50" />
+    <Property Name="AmortisationsStartPoint" Type="varchar" MaxLength="50" />
+    <Property Name="NoOfAmortisationPoint" Type="int" />
+  </EntityType>
+  <EntityType Name="DuplicateRecords">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LoanName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TimeStamp" Type="datetime" />
+    <Property Name="CounterParty" Type="nvarchar" MaxLength="50" />
+    <Property Name="BidPrice" Type="numeric" />
+    <Property Name="OfferPrice" Type="numeric" />
+    <Property Name="BidSpread" Type="numeric" />
+    <Property Name="OfferSpread" Type="numeric" />
+    <Property Name="Traded" Type="bit" />
+    <Property Name="MarketValue" Type="numeric" />
+    <Property Name="CountryID" Type="int" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EmailGroups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="GroupName" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EURCurves">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UploadDate" Type="datetime" />
+    <Property Name="SummitGenDate" Type="datetime" />
+    <Property Name="RateDate" Type="datetime" />
+    <Property Name="Rate" Type="numeric" Scale="5" />
+    <Property Name="DiscFreq" Type="decimal" Scale="5" />
+    <Property Name="CCY" Type="varchar" MaxLength="50" />
+    <Property Name="CurveIndex" Type="varchar" MaxLength="50" />
+    <Property Name="Days" Type="int" />
+    <Property Name="IsNew" Type="bit" />
+  </EntityType>
+  <EntityType Name="Groups">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsEmailReceiver" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LoanHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LoanName" Type="varchar" MaxLength="100" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="LastModified" Type="datetime" />
+    <Property Name="Action" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Loans">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CodeName" Type="varchar" MaxLength="100" />
+    <Property Name="Borrower" Type="varchar" MaxLength="100" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Sector" Type="varchar" MaxLength="50" />
+    <Property Name="Signing Date" Type="varchar" MaxLength="50" />
+    <Property Name="Maturity Date" Type="varchar" MaxLength="50" />
+    <Property Name="FixedOrFloating" Type="varchar" MaxLength="50" />
+    <Property Name="Margin" Type="varchar" MaxLength="50" />
+    <Property Name="Currency" Type="varchar" MaxLength="50" />
+    <Property Name="CouponFrequency" Type="varchar" MaxLength="50" />
+    <Property Name="FacilitySize" Type="varchar" MaxLength="50" />
+    <Property Name="Bilateral" Type="bit" />
+    <Property Name="Amortizing" Type="varchar" MaxLength="50" />
+    <Property Name="CouponDate" Type="varchar" MaxLength="50" />
+    <Property Name="Notional" Type="varchar" MaxLength="50" />
+    <Property Name="AmortisationsStartPoint" Type="varchar" MaxLength="50" />
+    <Property Name="NoOfAmortisationPoint" Type="int" />
+    <Property Name="CreditRating" Type="varchar" MaxLength="50" />
+    <Property Name="StructureID" Type="varchar" MaxLength="50" />
+    <Property Name="PP" Type="varchar" MaxLength="50" />
+    <Property Name="Fixed/Floating" Type="varchar" MaxLength="50" />
+    <Property Name="CreditRatingModys" Type="varchar" MaxLength="50" />
+    <Property Name="CreditRatingSPs" Type="varchar" MaxLength="50" />
+    <Property Name="CreditRatingFitch" Type="varchar" MaxLength="50" />
+    <Property Name="CreditRatingING" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="LastEdited" Type="datetime" />
+    <Property Name="Gurantor" Type="varchar" MaxLength="100" />
+    <Property Name="Grid" Type="varchar" MaxLength="100" />
+    <Property Name="SummitCreditEntity" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="LoanSchedule">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LoanID" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Notation" Type="decimal" />
+    <Property Name="Factor" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CoupFrac" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Amortisation" Type="decimal" Scale="7" />
+    <Property Name="FloatingRate" Type="numeric" Scale="5" />
+    <Property Name="Spread" Type="numeric" Scale="5" />
+    <Property Name="AllInRate" Type="numeric" Scale="5" />
+    <Property Name="Interest" Type="numeric" Scale="2" />
+    <Property Name="AmortisationInt" Type="numeric" Scale="2" />
+    <Property Name="CouponPaymentDate" Type="datetime" />
+    <Property Name="RiskFreeDP1" Type="numeric" Scale="7" />
+    <Property Name="RiskFreeDP2" Type="numeric" Scale="7" />
+    <Property Name="Days" Type="int" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Role" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="IsLocked" Type="bit" Nullable="false" />
+    <Property Name="FailedAttempts" Type="int" Nullable="false" />
+    <Property Name="LastPasswordReset" Type="datetime" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsLogin" Type="bit" />
+  </EntityType>
+  <EntityType Name="PasswordHistory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ChangedPassword" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ChangedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuotesAndTrades">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LoanName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TimeStamp" Type="datetime" />
+    <Property Name="CounterParty" Type="nvarchar" MaxLength="50" />
+    <Property Name="BidPrice" Type="numeric" Scale="2" />
+    <Property Name="OfferPrice" Type="numeric" Scale="2" />
+    <Property Name="BidSpread" Type="numeric" Scale="2" />
+    <Property Name="OfferSpread" Type="numeric" Scale="2" />
+    <Property Name="Traded" Type="bit" />
+    <Property Name="MarketValue" Type="numeric" />
+    <Property Name="CountryID" Type="int" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="AvgLifeDisc" Type="numeric" Scale="2" />
+    <Property Name="AvgLifeRiskDisc" Type="numeric" Scale="2" />
+    <Property Name="AvgLifeNonDisc" Type="numeric" Scale="2" />
+    <Property Name="SettlementDate" Type="datetime" />
+    <Property Name="Margin" Type="varchar" MaxLength="50" />
+    <Property Name="AverageLife" Type="numeric" Scale="5" />
+    <Property Name="TradedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Settings">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Value" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblActivityLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Activity" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Message" Type="varchar" MaxLength="5000" />
+    <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+    <Property Name="Exception" Type="varchar(max)" />
+    <Property Name="SessionID" Type="varchar(max)" Nullable="false" />
+    <Property Name="IP" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="URL" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="tblCountry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblEmailQue">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="SendTime" Type="datetime" Nullable="false" />
+    <Property Name="IsSent" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblHoliday">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="HolidayName" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="DayObserved" Type="varchar" MaxLength="50" />
+    <Property Name="CountryID" Type="int" />
+  </EntityType>
+  <EntityType Name="USDCurves">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UploadDate" Type="datetime" />
+    <Property Name="SummitGenDate" Type="datetime" />
+    <Property Name="RateDate" Type="datetime" />
+    <Property Name="Rate" Type="numeric" Scale="5" />
+    <Property Name="DiscFreq" Type="decimal" Scale="5" />
+    <Property Name="CCY" Type="varchar" MaxLength="50" />
+    <Property Name="CurveIndex" Type="varchar" MaxLength="50" />
+    <Property Name="Days" Type="int" />
+    <Property Name="IsNew" Type="bit" />
+  </EntityType>
+  <Association Name="FK_PasswordHistory_Login">
+    <End Role="Login" Type="LoanPriceModel.Store.Login" Multiplicity="1" />
+    <End Role="PasswordHistory" Type="LoanPriceModel.Store.PasswordHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PasswordHistory">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblActivityLog_Login">
+    <End Role="Login" Type="LoanPriceModel.Store.Login" Multiplicity="1" />
+    <End Role="tblActivityLog" Type="LoanPriceModel.Store.tblActivityLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Login">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblActivityLog">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblHoliday_tblCountry">
+    <End Role="tblCountry" Type="LoanPriceModel.Store.tblCountry" Multiplicity="0..1" />
+    <End Role="tblHoliday" Type="LoanPriceModel.Store.tblHoliday" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCountry">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tblHoliday">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
